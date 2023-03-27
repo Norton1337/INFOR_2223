@@ -1,0 +1,27 @@
+@startuml
+
+component  " <<component>>\n Arquivo Intermédiario" {
+    portin p1
+    portout p2
+    component "         <<component>>\nArquivo Intermédiario UI" as UI
+    component "               <<component>>\n Arquivo Intermédiario Backend" as Backend
+    interface "API ARQ" as API
+    
+ 
+}
+
+database "Base de Dados do Arquivo Intermediário" as BD {
+
+}
+
+interface "API ARQHIST" as API2
+
+UI -- p1
+UI -- API
+Backend --> API
+Backend -- p2
+p2- API2
+p2- BD
+
+
+@enduml

@@ -25,12 +25,12 @@
         <bpmn:flowNodeRef>Event_09u7mon</bpmn:flowNodeRef>
         <bpmn:flowNodeRef>Gateway_15frcf2</bpmn:flowNodeRef>
         <bpmn:flowNodeRef>Activity_0vq57fy</bpmn:flowNodeRef>
-        <bpmn:flowNodeRef>Gateway_0w7qtdn</bpmn:flowNodeRef>
-        <bpmn:flowNodeRef>Event_15qhdkv</bpmn:flowNodeRef>
         <bpmn:flowNodeRef>Gateway_14v8jbr</bpmn:flowNodeRef>
         <bpmn:flowNodeRef>Event_049b8ru</bpmn:flowNodeRef>
         <bpmn:flowNodeRef>Activity_0pmg9mz</bpmn:flowNodeRef>
         <bpmn:flowNodeRef>Event_1bpbouv</bpmn:flowNodeRef>
+        <bpmn:flowNodeRef>Event_15qhdkv</bpmn:flowNodeRef>
+        <bpmn:flowNodeRef>Gateway_1qxop1k</bpmn:flowNodeRef>
       </bpmn:lane>
       <bpmn:lane id="Lane_1reve0m" name="Divisão de Documentação e Cultura">
         <bpmn:flowNodeRef>Event_0oq5886</bpmn:flowNodeRef>
@@ -108,29 +108,8 @@
         <bpmn:targetRef>DataObjectReference_1lhvi01</bpmn:targetRef>
       </bpmn:dataOutputAssociation>
     </bpmn:task>
-    <bpmn:dataObjectReference id="DataObjectReference_1lhvi01" name="Guia de Remessa(ISEP-DDC-ARQ-MOD003)" dataObjectRef="DataObject_1hczx6x" />
-    <bpmn:dataObject id="DataObject_1hczx6x" />
-    <bpmn:parallelGateway id="Gateway_0w7qtdn">
-      <bpmn:incoming>Flow_0etix36</bpmn:incoming>
-      <bpmn:outgoing>Flow_1cdgkjb</bpmn:outgoing>
-    </bpmn:parallelGateway>
-    <bpmn:intermediateThrowEvent id="Event_15qhdkv" name="Enviar Guia da Remessa e Auto da Entrega">
-      <bpmn:incoming>Flow_1cdgkjb</bpmn:incoming>
-      <bpmn:outgoing>Flow_0o1kkhz</bpmn:outgoing>
-      <bpmn:outgoing>Flow_0jmm45g</bpmn:outgoing>
-      <bpmn:property id="Property_0gycr4b" name="__targetRef_placeholder" />
-      <bpmn:dataInputAssociation id="DataInputAssociation_0b0umit">
-        <bpmn:sourceRef>DataObjectReference_1lhvi01</bpmn:sourceRef>
-        <bpmn:targetRef>Property_0gycr4b</bpmn:targetRef>
-      </bpmn:dataInputAssociation>
-      <bpmn:dataInputAssociation id="DataInputAssociation_0rxh5kz">
-        <bpmn:sourceRef>DataObjectReference_0e0dxy3</bpmn:sourceRef>
-        <bpmn:targetRef>Property_0gycr4b</bpmn:targetRef>
-      </bpmn:dataInputAssociation>
-      <bpmn:messageEventDefinition id="MessageEventDefinition_0vfpm4i" />
-    </bpmn:intermediateThrowEvent>
     <bpmn:intermediateCatchEvent id="Event_1ok7758" name="Recebe Auto de Entrega e Guia de Remessa">
-      <bpmn:incoming>Flow_0o1kkhz</bpmn:incoming>
+      <bpmn:incoming>Flow_1ep8gfm</bpmn:incoming>
       <bpmn:outgoing>Flow_0yxiket</bpmn:outgoing>
       <bpmn:messageEventDefinition id="MessageEventDefinition_0v772o8" />
     </bpmn:intermediateCatchEvent>
@@ -149,7 +128,7 @@
       <bpmn:outgoing>Flow_1i9m6n2</bpmn:outgoing>
     </bpmn:parallelGateway>
     <bpmn:intermediateCatchEvent id="Event_0oq5886" name="Recebe Auto de Entrega e Guia de Remessa">
-      <bpmn:incoming>Flow_0jmm45g</bpmn:incoming>
+      <bpmn:incoming>Flow_1c4mdb1</bpmn:incoming>
       <bpmn:outgoing>Flow_1yr398h</bpmn:outgoing>
       <bpmn:messageEventDefinition id="MessageEventDefinition_15n7et2" />
     </bpmn:intermediateCatchEvent>
@@ -198,10 +177,8 @@
     <bpmn:sequenceFlow id="Flow_0qmmg38" name="Não" sourceRef="Gateway_15frcf2" targetRef="Activity_0sxq2ms" />
     <bpmn:sequenceFlow id="Flow_0odo2qx" sourceRef="Activity_0sxq2ms" targetRef="Gateway_15frcf2" />
     <bpmn:sequenceFlow id="Flow_0jer6pl" sourceRef="Gateway_15frcf2" targetRef="Activity_0vq57fy" />
-    <bpmn:sequenceFlow id="Flow_0etix36" sourceRef="Activity_0vq57fy" targetRef="Gateway_0w7qtdn" />
-    <bpmn:sequenceFlow id="Flow_1cdgkjb" sourceRef="Gateway_0w7qtdn" targetRef="Event_15qhdkv" />
-    <bpmn:sequenceFlow id="Flow_0o1kkhz" sourceRef="Event_15qhdkv" targetRef="Event_1ok7758" />
-    <bpmn:sequenceFlow id="Flow_0jmm45g" sourceRef="Event_15qhdkv" targetRef="Event_0oq5886" />
+    <bpmn:sequenceFlow id="Flow_0etix36" sourceRef="Activity_0vq57fy" targetRef="Event_15qhdkv" />
+    <bpmn:sequenceFlow id="Flow_0o1kkhz" sourceRef="Event_15qhdkv" targetRef="Gateway_1qxop1k" />
     <bpmn:sequenceFlow id="Flow_0yxiket" sourceRef="Event_1ok7758" targetRef="Activity_065oxqd" />
     <bpmn:sequenceFlow id="Flow_1l21gj0" sourceRef="Activity_065oxqd" targetRef="Event_0qrcueg" />
     <bpmn:sequenceFlow id="Flow_0lgeh8n" sourceRef="Event_0qrcueg" targetRef="Gateway_14v8jbr" />
@@ -211,6 +188,29 @@
     <bpmn:sequenceFlow id="Flow_07psqht" sourceRef="Activity_1c4ucas" targetRef="Event_1tjgc3h" />
     <bpmn:sequenceFlow id="Flow_076hi95" sourceRef="Event_049b8ru" targetRef="Activity_0pmg9mz" />
     <bpmn:sequenceFlow id="Flow_0ivl2vr" sourceRef="Activity_0pmg9mz" targetRef="Event_1bpbouv" />
+    <bpmn:intermediateThrowEvent id="Event_15qhdkv" name="Enviar Guia da Remessa e Auto da Entrega">
+      <bpmn:incoming>Flow_0etix36</bpmn:incoming>
+      <bpmn:outgoing>Flow_0o1kkhz</bpmn:outgoing>
+      <bpmn:property id="Property_0gycr4b" name="__targetRef_placeholder" />
+      <bpmn:dataInputAssociation id="DataInputAssociation_0b0umit">
+        <bpmn:sourceRef>DataObjectReference_1lhvi01</bpmn:sourceRef>
+        <bpmn:targetRef>Property_0gycr4b</bpmn:targetRef>
+      </bpmn:dataInputAssociation>
+      <bpmn:dataInputAssociation id="DataInputAssociation_0rxh5kz">
+        <bpmn:sourceRef>DataObjectReference_0e0dxy3</bpmn:sourceRef>
+        <bpmn:targetRef>Property_0gycr4b</bpmn:targetRef>
+      </bpmn:dataInputAssociation>
+      <bpmn:messageEventDefinition id="MessageEventDefinition_0vfpm4i" />
+    </bpmn:intermediateThrowEvent>
+    <bpmn:parallelGateway id="Gateway_1qxop1k">
+      <bpmn:incoming>Flow_0o1kkhz</bpmn:incoming>
+      <bpmn:outgoing>Flow_1ep8gfm</bpmn:outgoing>
+      <bpmn:outgoing>Flow_1c4mdb1</bpmn:outgoing>
+    </bpmn:parallelGateway>
+    <bpmn:sequenceFlow id="Flow_1ep8gfm" sourceRef="Gateway_1qxop1k" targetRef="Event_1ok7758" />
+    <bpmn:sequenceFlow id="Flow_1c4mdb1" sourceRef="Gateway_1qxop1k" targetRef="Event_0oq5886" />
+    <bpmn:dataObjectReference id="DataObjectReference_1lhvi01" name="Guia de Remessa(ISEP-DDC-ARQ-MOD003)" dataObjectRef="DataObject_1hczx6x" />
+    <bpmn:dataObject id="DataObject_1hczx6x" />
     <bpmn:textAnnotation id="TextAnnotation_0c64wwy">
       <bpmn:text>deverão ser agrupadas indicando o departamento, unidade curricular, nome/sigla do docente, época de avaliação e ano letivo a que dizem respeito.</bpmn:text>
     </bpmn:textAnnotation>
@@ -350,25 +350,10 @@
         <dc:Bounds x="2036" y="820" width="100" height="80" />
         <bpmndi:BPMNLabel />
       </bpmndi:BPMNShape>
-      <bpmndi:BPMNShape id="DataObjectReference_1lhvi01_di" bpmnElement="DataObjectReference_1lhvi01">
-        <dc:Bounds x="2138" y="965" width="36" height="50" />
-        <bpmndi:BPMNLabel>
-          <dc:Bounds x="2176" y="933" width="80" height="53" />
-        </bpmndi:BPMNLabel>
-      </bpmndi:BPMNShape>
-      <bpmndi:BPMNShape id="Gateway_0w7qtdn_di" bpmnElement="Gateway_0w7qtdn">
-        <dc:Bounds x="2261" y="835" width="50" height="50" />
-      </bpmndi:BPMNShape>
-      <bpmndi:BPMNShape id="Event_15qhdkv_di" bpmnElement="Event_15qhdkv">
-        <dc:Bounds x="2438" y="842" width="36" height="36" />
-        <bpmndi:BPMNLabel>
-          <dc:Bounds x="2365" y="800" width="81" height="40" />
-        </bpmndi:BPMNLabel>
-      </bpmndi:BPMNShape>
       <bpmndi:BPMNShape id="Event_1ok7758_di" bpmnElement="Event_1ok7758">
         <dc:Bounds x="2438" y="272" width="36" height="36" />
         <bpmndi:BPMNLabel>
-          <dc:Bounds x="2346" y="270" width="79" height="40" />
+          <dc:Bounds x="2416" y="222" width="79" height="40" />
         </bpmndi:BPMNLabel>
       </bpmndi:BPMNShape>
       <bpmndi:BPMNShape id="Activity_065oxqd_di" bpmnElement="Activity_065oxqd">
@@ -387,7 +372,7 @@
       <bpmndi:BPMNShape id="BPMNShape_0nnqfgw" bpmnElement="Event_0oq5886">
         <dc:Bounds x="2438" y="1162" width="36" height="36" />
         <bpmndi:BPMNLabel>
-          <dc:Bounds x="2346" y="1160" width="79" height="40" />
+          <dc:Bounds x="2416" y="1112" width="79" height="40" />
         </bpmndi:BPMNLabel>
       </bpmndi:BPMNShape>
       <bpmndi:BPMNShape id="BPMNShape_0u9765l" bpmnElement="Event_1tjgc3h">
@@ -432,6 +417,21 @@
         <dc:Bounds x="3178" y="842" width="36" height="36" />
         <bpmndi:BPMNLabel>
           <dc:Bounds x="3154" y="885" width="85" height="40" />
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Event_15qhdkv_di" bpmnElement="Event_15qhdkv">
+        <dc:Bounds x="2242" y="842" width="36" height="36" />
+        <bpmndi:BPMNLabel>
+          <dc:Bounds x="2169" y="800" width="81" height="40" />
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Gateway_1qxop1k_di" bpmnElement="Gateway_1qxop1k">
+        <dc:Bounds x="2345" y="835" width="50" height="50" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="DataObjectReference_1lhvi01_di" bpmnElement="DataObjectReference_1lhvi01">
+        <dc:Bounds x="2092" y="945" width="36" height="50" />
+        <bpmndi:BPMNLabel>
+          <dc:Bounds x="2130" y="913" width="80" height="53" />
         </bpmndi:BPMNLabel>
       </bpmndi:BPMNShape>
       <bpmndi:BPMNEdge id="Association_0p6avow_di" bpmnElement="Association_0p6avow">
@@ -524,19 +524,11 @@
       </bpmndi:BPMNEdge>
       <bpmndi:BPMNEdge id="Flow_0etix36_di" bpmnElement="Flow_0etix36">
         <di:waypoint x="2136" y="860" />
-        <di:waypoint x="2261" y="860" />
-      </bpmndi:BPMNEdge>
-      <bpmndi:BPMNEdge id="Flow_1cdgkjb_di" bpmnElement="Flow_1cdgkjb">
-        <di:waypoint x="2311" y="860" />
-        <di:waypoint x="2438" y="860" />
+        <di:waypoint x="2242" y="860" />
       </bpmndi:BPMNEdge>
       <bpmndi:BPMNEdge id="Flow_0o1kkhz_di" bpmnElement="Flow_0o1kkhz">
-        <di:waypoint x="2456" y="842" />
-        <di:waypoint x="2456" y="308" />
-      </bpmndi:BPMNEdge>
-      <bpmndi:BPMNEdge id="Flow_0jmm45g_di" bpmnElement="Flow_0jmm45g">
-        <di:waypoint x="2456" y="878" />
-        <di:waypoint x="2456" y="1162" />
+        <di:waypoint x="2278" y="860" />
+        <di:waypoint x="2345" y="860" />
       </bpmndi:BPMNEdge>
       <bpmndi:BPMNEdge id="Flow_0yxiket_di" bpmnElement="Flow_0yxiket">
         <di:waypoint x="2474" y="290" />
@@ -574,6 +566,16 @@
         <di:waypoint x="3076" y="860" />
         <di:waypoint x="3178" y="860" />
       </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Flow_1ep8gfm_di" bpmnElement="Flow_1ep8gfm">
+        <di:waypoint x="2370" y="835" />
+        <di:waypoint x="2370" y="290" />
+        <di:waypoint x="2438" y="290" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Flow_1c4mdb1_di" bpmnElement="Flow_1c4mdb1">
+        <di:waypoint x="2370" y="885" />
+        <di:waypoint x="2370" y="1180" />
+        <di:waypoint x="2438" y="1180" />
+      </bpmndi:BPMNEdge>
       <bpmndi:BPMNEdge id="DataOutputAssociation_0ovzot6_di" bpmnElement="DataOutputAssociation_0ovzot6">
         <di:waypoint x="1112" y="350" />
         <di:waypoint x="1156" y="400" />
@@ -588,18 +590,18 @@
         <di:waypoint x="2028" y="985" />
       </bpmndi:BPMNEdge>
       <bpmndi:BPMNEdge id="DataOutputAssociation_0fqny1d_di" bpmnElement="DataOutputAssociation_0fqny1d">
-        <di:waypoint x="2108" y="900" />
-        <di:waypoint x="2143" y="965" />
+        <di:waypoint x="2095" y="900" />
+        <di:waypoint x="2105" y="945" />
       </bpmndi:BPMNEdge>
       <bpmndi:BPMNEdge id="DataInputAssociation_0b0umit_di" bpmnElement="DataInputAssociation_0b0umit">
-        <di:waypoint x="2174" y="990" />
-        <di:waypoint x="2346" y="990" />
-        <di:waypoint x="2444" y="874" />
+        <di:waypoint x="2128" y="970" />
+        <di:waypoint x="2260" y="970" />
+        <di:waypoint x="2260" y="878" />
       </bpmndi:BPMNEdge>
       <bpmndi:BPMNEdge id="DataInputAssociation_0rxh5kz_di" bpmnElement="DataInputAssociation_0rxh5kz">
         <di:waypoint x="2036" y="1030" />
-        <di:waypoint x="2356" y="1030" />
-        <di:waypoint x="2447" y="875" />
+        <di:waypoint x="2260" y="1030" />
+        <di:waypoint x="2260" y="878" />
       </bpmndi:BPMNEdge>
       <bpmndi:BPMNEdge id="DataOutputAssociation_1ssvo3d_di" bpmnElement="DataOutputAssociation_1ssvo3d">
         <di:waypoint x="3041" y="900" />
