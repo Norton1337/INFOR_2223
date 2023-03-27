@@ -1,0 +1,20 @@
+@startuml
+
+node "Servidor: ARQ_UI" as FE{
+   component "         <<component>>\nArquivo Intermédiario UI" as UI
+  
+}
+
+node "Servidor: ARQ_BE" as BE {
+  component "               <<component>>\n Arquivo Intermédiario Backend" as Backend
+}
+
+database "Base de Dados do Arquivo Intermediário" as BD {
+
+}
+
+
+FE--BE : http/s
+BE--BD : TCP/IP
+
+@enduml
