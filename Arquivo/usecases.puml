@@ -1,0 +1,69 @@
+@startuml
+'https://plantuml.com/use-case-diagram
+
+left to right direction
+skinparam actorStyle awesome
+
+
+
+
+package "Divisão de Documentação e Cultura" {
+     actor "Coordenador" as coord
+
+}
+
+package "Arquivo Intermediário" {
+     actor "Técnico" as arquivo
+    (Enviar documentos) as (UseCase1)
+    (Consulta de arquivos) as (UseCase2)
+    (Requisição de arquivos) as (UseCase3)
+    (Avaliar o estado de conservação dos arquivos \ne reparar os que não se encontram em bom estado) as (UseCase4)
+    (Eliminar arquvios que tenham passado o prazo de conservação) as (UseCase5)
+
+}
+
+package "Arquivo Histórico" {
+    actor "Técnico" as historico
+     (Consulta de arquivos) as (UseCase6)
+     (Enviar documentos) as (UseCase9)
+
+}
+
+package "Orgãos e Estruturas do ISEP" {
+    actor "Colaborador" as isep
+
+}
+
+package "Arquivo Corrente" {
+
+    (Atrubuir prazos de conservação aos documentos) as (UseCase7)
+}
+
+
+package "Arquivo" {
+    actor "Técnico" as arq
+    (Arquivar documentos) as (UseCase10)
+}
+
+isep-(UseCase1)
+isep--(UseCase2)
+isep--(UseCase3)
+isep--(UseCase6)
+isep-(UseCase7)
+isep---(UseCase9)
+
+arquivo-(UseCase4)
+arquivo--(UseCase5)
+
+historico-(UseCase6)
+historico--(UseCase9)
+
+coord---(UseCase9)
+coord--(UseCase6)
+
+arq-(UseCase10)
+
+
+@enduml
+
+

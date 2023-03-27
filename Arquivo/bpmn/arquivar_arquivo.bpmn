@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<bpmn:definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:bpmn="http://www.omg.org/spec/BPMN/20100524/MODEL" xmlns:bpmndi="http://www.omg.org/spec/BPMN/20100524/DI" xmlns:dc="http://www.omg.org/spec/DD/20100524/DC" xmlns:di="http://www.omg.org/spec/DD/20100524/DI" id="Definitions_02ngr8y" targetNamespace="http://bpmn.io/schema/bpmn" exporter="bpmn-js (https://demo.bpmn.io)" exporterVersion="11.5.0">
+  <bpmn:collaboration id="Collaboration_0ws6xve">
+    <bpmn:participant id="Participant_03tz9bz" name="Arquivo" processRef="Process_1slqn7q" />
+  </bpmn:collaboration>
+  <bpmn:process id="Process_1slqn7q" isExecutable="false">
+    <bpmn:dataObjectReference id="DataObjectReference_1pgf73q" name="Gestão Documental (UAG-GPQ-PG001)" dataObjectRef="DataObject_1aj0yzb" />
+    <bpmn:dataObject id="DataObject_1aj0yzb" />
+    <bpmn:task id="Activity_0tt1m6g" name="Arquivar Documentos">
+      <bpmn:incoming>Flow_0q582c4</bpmn:incoming>
+      <bpmn:outgoing>Flow_1qqyzza</bpmn:outgoing>
+      <bpmn:dataOutputAssociation id="DataOutputAssociation_1wd3fiw">
+        <bpmn:targetRef>DataObjectReference_1pgf73q</bpmn:targetRef>
+      </bpmn:dataOutputAssociation>
+    </bpmn:task>
+    <bpmn:startEvent id="StartEvent_1pfek2x">
+      <bpmn:outgoing>Flow_0q582c4</bpmn:outgoing>
+    </bpmn:startEvent>
+    <bpmn:endEvent id="Event_1sar10s">
+      <bpmn:incoming>Flow_1qqyzza</bpmn:incoming>
+    </bpmn:endEvent>
+    <bpmn:sequenceFlow id="Flow_0q582c4" sourceRef="StartEvent_1pfek2x" targetRef="Activity_0tt1m6g" />
+    <bpmn:sequenceFlow id="Flow_1qqyzza" sourceRef="Activity_0tt1m6g" targetRef="Event_1sar10s" />
+  </bpmn:process>
+  <bpmndi:BPMNDiagram id="BPMNDiagram_1">
+    <bpmndi:BPMNPlane id="BPMNPlane_1" bpmnElement="Collaboration_0ws6xve">
+      <bpmndi:BPMNShape id="Participant_03tz9bz_di" bpmnElement="Participant_03tz9bz" isHorizontal="true">
+        <dc:Bounds x="160" y="80" width="600" height="280" />
+        <bpmndi:BPMNLabel />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="DataObjectReference_1pgf73q_di" bpmnElement="DataObjectReference_1pgf73q">
+        <dc:Bounds x="422" y="235" width="36" height="50" />
+        <bpmndi:BPMNLabel>
+          <dc:Bounds x="410" y="292" width="60" height="53" />
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Activity_0tt1m6g_di" bpmnElement="Activity_0tt1m6g">
+        <dc:Bounds x="390" y="110" width="100" height="80" />
+        <bpmndi:BPMNLabel />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="_BPMNShape_StartEvent_2" bpmnElement="StartEvent_1pfek2x">
+        <dc:Bounds x="252" y="132" width="36" height="36" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Event_1sar10s_di" bpmnElement="Event_1sar10s">
+        <dc:Bounds x="592" y="132" width="36" height="36" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNEdge id="Flow_0q582c4_di" bpmnElement="Flow_0q582c4">
+        <di:waypoint x="288" y="150" />
+        <di:waypoint x="390" y="150" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Flow_1qqyzza_di" bpmnElement="Flow_1qqyzza">
+        <di:waypoint x="490" y="150" />
+        <di:waypoint x="592" y="150" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="DataOutputAssociation_1wd3fiw_di" bpmnElement="DataOutputAssociation_1wd3fiw">
+        <di:waypoint x="441" y="190" />
+        <di:waypoint x="441" y="235" />
+      </bpmndi:BPMNEdge>
+    </bpmndi:BPMNPlane>
+  </bpmndi:BPMNDiagram>
+</bpmn:definitions>
