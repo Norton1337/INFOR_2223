@@ -1,0 +1,43 @@
+@startuml UC_BIB
+
+left to right direction
+
+skinparam actorStyle awesome
+
+actor "Biblioteca do ISEP" as biblio
+
+"Como Biblioteca, sou responsável pelo processo de listagem de aquisição de monografias e publicações" as (use1)
+
+"Como Biblioteca, sou responsável pela catalogação e organização num registo dos materiais adquiridos" as (use2)
+
+"Como Biblioteca, desejo realizar o tratamento técnico de dissertações" as (use3)    
+
+"Como Biblioteca, desejo servir os alunos com serviços de requisição/empréstimo dos materiais disponíveis" as (use5)
+
+"Como Biblioteca, pretendo efetuar um controlo das requisições efetuadas através de um sistema informático" as (use4)
+
+"Como Biblioteca, possuo um processo de controlo de dano e extravio" as (use6)
+
+"Como Biblioteca, pretendo analisar e manifestar a decisão perante possíveis doações" as (use7)
+
+"Como Biblioteca, promovo ações de infoliteracia" as (use8)
+
+
+biblio --> (use1)
+
+biblio --> (use2)
+
+biblio --> (use3)
+
+biblio --> (use4)
+
+biblio --> (use5)
+
+biblio --> (use6)
+
+biblio --> (use7)
+
+biblio --> (use8)
+
+
+@enduml
