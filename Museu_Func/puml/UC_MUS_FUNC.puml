@@ -1,0 +1,35 @@
+' create basic uses case diagram
+@startuml UC_MUS_FUNC
+
+left to right direction
+skinparam actorStyle awesome
+
+
+actor "Utilizador" as User
+
+(Consultar Acervo Museológico) as UC1
+(Doar ou transferir objetos) as UC2
+(Consultar Arquivo histórico) as UC3	
+(Fotografar) as UC4
+(Filmar no espaço museológico) as UC5
+(Requisitar empréstimo temporário de objetos) as UC6
+(Consultar fundo bibliografico antigo) as UC7
+(Marcar visita de grupo) as UC8
+(Pesquisar base de dados do museu) as UC9
+
+User --> UC1
+User --> UC2
+User --> UC3
+User --> UC4
+User --> UC5
+User --> UC6
+User --> UC7
+User --> UC8
+User --> UC9
+
+
+
+
+@enduml
+
+
