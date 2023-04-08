@@ -1,0 +1,27 @@
+@startuml
+
+component  " <<component>>\n Incorporação Objetos" {
+    portin p1
+    portout p2
+    component "         <<component>>\nIncorp_ObjetosUI" as UI
+    component "               <<component>>\n Incorp_ObjetosBackend" as Backend
+    interface "API Inc_Obj" as API
+    
+ 
+}
+
+database "Base de Dados de Objetos adquiridos" as BD {
+
+}
+
+interface "API INCORPOBJ" as API2
+
+UI -- p1
+UI -- API
+Backend --> API
+Backend -- p2
+p2- API2
+p2- BD
+
+
+@enduml

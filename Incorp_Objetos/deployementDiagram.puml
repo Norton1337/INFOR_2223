@@ -1,0 +1,20 @@
+@startuml
+
+node "Servidor: Incorp_Obj_UI" as FE{
+   component "         <<component>>\nIncorp_ObjetosUI" as UI
+  
+}
+
+node "Servidor: Incorp_Obj_BE" as BE {
+  component "               <<component>>\n Incorp_ObjetosBackend" as Backend
+}
+
+database "Base de Dados de Objetos adquiridos" as BD {
+
+}
+
+
+FE--BE : http/s
+BE--BD : TCP/IP
+
+@enduml
