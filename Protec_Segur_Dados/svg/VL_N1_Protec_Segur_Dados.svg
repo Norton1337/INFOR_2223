@@ -27,13 +27,13 @@
       ><path d="M-7 -7 L38 -7 L38 38 L-7 38 L-7 -7 Z"
       /></clipPath
       ><clipPath clipPathUnits="userSpaceOnUse" id="clipPath8"
-      ><path d="M-107 -15 L214 -15 L214 30 L-107 30 L-107 -15 Z"
+      ><path d="M-88 -15 L176 -15 L176 30 L-88 30 L-88 -15 Z"
       /></clipPath
       ><clipPath clipPathUnits="userSpaceOnUse" id="clipPath9"
       ><path d="M-72 -15 L144 -15 L144 30 L-72 30 L-72 -15 Z"
       /></clipPath
       ><clipPath clipPathUnits="userSpaceOnUse" id="clipPath10"
-      ><path d="M-88 -15 L176 -15 L176 30 L-88 30 L-88 -15 Z"
+      ><path d="M-107 -15 L214 -15 L214 30 L-107 30 L-107 -15 Z"
       /></clipPath
       ><clipPath clipPathUnits="userSpaceOnUse" id="clipPath11"
       ><path d="M0 0 L148 0 L148 172 L0 172 L0 0 Z"
@@ -103,17 +103,17 @@
     ><g stroke-linecap="butt" font-size="11px" transform="translate(474,41)" fill-opacity="1" fill="black" text-rendering="geometricPrecision" image-rendering="optimizeQuality" font-family="sans-serif" stroke-linejoin="round" stroke="black" stroke-opacity="1" stroke-miterlimit="0"
     ><rect fill="none" x="0" width="12" height="12" y="0" clip-path="url(#clipPath6)"
     /></g
-    ><g font-size="11px" transform="translate(534,74)" fill-opacity="1" fill="black" text-rendering="geometricPrecision" image-rendering="optimizeQuality" font-family="sans-serif" stroke="black" font-weight="bold" stroke-opacity="1"
+    ><g font-size="11px" transform="translate(2,359)" fill-opacity="1" fill="black" text-rendering="geometricPrecision" image-rendering="optimizeQuality" font-family="sans-serif" stroke="black" font-weight="bold" stroke-opacity="1"
     ><text x="10" xml:space="preserve" y="12" clip-path="url(#clipPath8)" stroke="none"
-      >Portal_ISEP_API</text
+      >Utilizador_UI</text
     ></g
     ><g font-size="11px" transform="translate(106,359)" fill-opacity="1" fill="black" text-rendering="geometricPrecision" image-rendering="optimizeQuality" font-family="sans-serif" stroke="black" font-weight="bold" stroke-opacity="1"
     ><text x="10" xml:space="preserve" y="12" clip-path="url(#clipPath9)" stroke="none"
       >Admin_UI</text
     ></g
-    ><g font-size="11px" transform="translate(2,359)" fill-opacity="1" fill="black" text-rendering="geometricPrecision" image-rendering="optimizeQuality" font-family="sans-serif" stroke="black" font-weight="bold" stroke-opacity="1"
+    ><g font-size="11px" transform="translate(534,74)" fill-opacity="1" fill="black" text-rendering="geometricPrecision" image-rendering="optimizeQuality" font-family="sans-serif" stroke="black" font-weight="bold" stroke-opacity="1"
     ><text x="10" xml:space="preserve" y="12" clip-path="url(#clipPath10)" stroke="none"
-      >Utilizador_UI</text
+      >Portal_ISEP_API</text
     ></g
     ><g stroke-linecap="butt" font-size="11px" transform="translate(-4,222)" fill-opacity="1" fill="black" text-rendering="geometricPrecision" image-rendering="optimizeQuality" font-family="sans-serif" stroke-linejoin="round" stroke="black" stroke-opacity="1"
     ><line y2="61" fill="none" x1="50" clip-path="url(#clipPath12)" x2="50" y1="118"

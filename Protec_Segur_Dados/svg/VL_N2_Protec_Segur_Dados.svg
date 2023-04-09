@@ -9,10 +9,10 @@
       ><path d="M-7 -7 L853 -7 L853 471 L-7 471 L-7 -7 Z"
       /></clipPath
       ><clipPath clipPathUnits="userSpaceOnUse" id="clipPath2"
-      ><path d="M0 0 L0 412 L842 412 L842 0 Z"
+      ><path d="M0 0 L0 460 L818 460 L818 0 Z"
       /></clipPath
       ><clipPath clipPathUnits="userSpaceOnUse" id="clipPath3"
-      ><path d="M0 0 L0 460 L818 460 L818 0 Z"
+      ><path d="M0 0 L0 412 L842 412 L842 0 Z"
       /></clipPath
       ><clipPath clipPathUnits="userSpaceOnUse" id="clipPath4"
       ><path d="M-7 -7 L23 -7 L23 26 L-7 26 L-7 -7 Z"
@@ -36,19 +36,19 @@
       ><path d="M0 0 L0 49 L177 49 L177 0 Z"
       /></clipPath
       ><clipPath clipPathUnits="userSpaceOnUse" id="clipPath11"
-      ><path d="M-178 -15 L356 -15 L356 30 L-178 30 L-178 -15 Z"
+      ><path d="M-88 -15 L176 -15 L176 30 L-88 30 L-88 -15 Z"
       /></clipPath
       ><clipPath clipPathUnits="userSpaceOnUse" id="clipPath12"
-      ><path d="M-156 -15 L312 -15 L312 30 L-156 30 L-156 -15 Z"
+      ><path d="M-72 -15 L144 -15 L144 30 L-72 30 L-72 -15 Z"
       /></clipPath
       ><clipPath clipPathUnits="userSpaceOnUse" id="clipPath13"
       ><path d="M-107 -15 L214 -15 L214 30 L-107 30 L-107 -15 Z"
       /></clipPath
       ><clipPath clipPathUnits="userSpaceOnUse" id="clipPath14"
-      ><path d="M-72 -15 L144 -15 L144 30 L-72 30 L-72 -15 Z"
+      ><path d="M-156 -15 L312 -15 L312 30 L-156 30 L-156 -15 Z"
       /></clipPath
       ><clipPath clipPathUnits="userSpaceOnUse" id="clipPath15"
-      ><path d="M-88 -15 L176 -15 L176 30 L-88 30 L-88 -15 Z"
+      ><path d="M-178 -15 L356 -15 L356 30 L-178 30 L-178 -15 Z"
       /></clipPath
       ><clipPath clipPathUnits="userSpaceOnUse" id="clipPath16"
       ><path d="M0 0 L143 0 L143 161 L0 161 L0 0 Z"
@@ -117,11 +117,11 @@
       /><line stroke-linecap="square" clip-path="url(#clipPath1)" fill="none" x1="826" x2="826" y1="18" y2="21" stroke-linejoin="miter" stroke-miterlimit="10"
     /></g
     ><g font-size="11px" transform="translate(75,2)" fill-opacity="1" fill="black" text-rendering="geometricPrecision" image-rendering="optimizeQuality" font-family="sans-serif" stroke="black" stroke-opacity="1"
-    ><text x="368" xml:space="preserve" y="15" clip-path="url(#clipPath3)" stroke="none"
+    ><text x="368" xml:space="preserve" y="15" clip-path="url(#clipPath2)" stroke="none"
       >&lt;&lt;component&gt;&gt;</text
-      ><text x="364" xml:space="preserve" y="30" clip-path="url(#clipPath3)" stroke="none"
+      ><text x="364" xml:space="preserve" y="30" clip-path="url(#clipPath2)" stroke="none"
       >&lt;&lt;Context (C4)&gt;&gt;</text
-      ><text x="324" xml:space="preserve" y="45" clip-path="url(#clipPath3)" font-weight="bold" stroke="none"
+      ><text x="324" xml:space="preserve" y="45" clip-path="url(#clipPath2)" font-weight="bold" stroke="none"
       >Protec_Segur_Dados_Plataform</text
     ></g
     ><g font-size="11px" transform="translate(86,455)" fill-opacity="1" fill="rgb(122,207,245)" text-rendering="geometricPrecision" image-rendering="optimizeQuality" font-family="sans-serif" stroke="rgb(122,207,245)" stroke-opacity="1"
@@ -226,25 +226,25 @@
     ><g fill-opacity="1" text-rendering="geometricPrecision" stroke="black" stroke-linecap="butt" transform="translate(727,229)" stroke-miterlimit="0" stroke-opacity="1" fill="black" font-weight="bold" font-family="sans-serif" stroke-linejoin="round" font-size="11px" image-rendering="optimizeQuality"
     ><circle fill="none" r="9.5" clip-path="url(#clipPath5)" cx="9.5" cy="9.5"
     /></g
-    ><g font-size="11px" transform="translate(648,249)" fill-opacity="1" fill="black" text-rendering="geometricPrecision" image-rendering="optimizeQuality" font-family="sans-serif" stroke="black" font-weight="bold" stroke-opacity="1"
+    ><g font-size="11px" transform="translate(2,544)" fill-opacity="1" fill="black" text-rendering="geometricPrecision" image-rendering="optimizeQuality" font-family="sans-serif" stroke="black" font-weight="bold" stroke-opacity="1"
     ><text x="10" xml:space="preserve" y="12" clip-path="url(#clipPath11)" stroke="none"
-      >Protec_Segur_Dados_DB_API</text
+      >Utilizador_UI</text
     ></g
-    ><g font-size="11px" transform="translate(141,92)" fill-opacity="1" fill="black" text-rendering="geometricPrecision" image-rendering="optimizeQuality" font-family="sans-serif" stroke="black" font-weight="bold" stroke-opacity="1"
+    ><g font-size="11px" transform="translate(103,544)" fill-opacity="1" fill="black" text-rendering="geometricPrecision" image-rendering="optimizeQuality" font-family="sans-serif" stroke="black" font-weight="bold" stroke-opacity="1"
     ><text x="10" xml:space="preserve" y="12" clip-path="url(#clipPath12)" stroke="none"
-      >Protec_Segur_Dados_API</text
+      >Admin_UI</text
     ></g
     ><g font-size="11px" transform="translate(1059,75)" fill-opacity="1" fill="black" text-rendering="geometricPrecision" image-rendering="optimizeQuality" font-family="sans-serif" stroke="black" font-weight="bold" stroke-opacity="1"
     ><text x="10" xml:space="preserve" y="12" clip-path="url(#clipPath13)" stroke="none"
       >Portal_ISEP_API</text
     ></g
-    ><g font-size="11px" transform="translate(103,544)" fill-opacity="1" fill="black" text-rendering="geometricPrecision" image-rendering="optimizeQuality" font-family="sans-serif" stroke="black" font-weight="bold" stroke-opacity="1"
+    ><g font-size="11px" transform="translate(141,92)" fill-opacity="1" fill="black" text-rendering="geometricPrecision" image-rendering="optimizeQuality" font-family="sans-serif" stroke="black" font-weight="bold" stroke-opacity="1"
     ><text x="10" xml:space="preserve" y="12" clip-path="url(#clipPath14)" stroke="none"
-      >Admin_UI</text
+      >Protec_Segur_Dados_API</text
     ></g
-    ><g font-size="11px" transform="translate(2,544)" fill-opacity="1" fill="black" text-rendering="geometricPrecision" image-rendering="optimizeQuality" font-family="sans-serif" stroke="black" font-weight="bold" stroke-opacity="1"
+    ><g font-size="11px" transform="translate(648,249)" fill-opacity="1" fill="black" text-rendering="geometricPrecision" image-rendering="optimizeQuality" font-family="sans-serif" stroke="black" font-weight="bold" stroke-opacity="1"
     ><text x="10" xml:space="preserve" y="12" clip-path="url(#clipPath15)" stroke="none"
-      >Utilizador_UI</text
+      >Protec_Segur_Dados_DB_API</text
     ></g
     ><g stroke-linecap="butt" font-size="11px" transform="translate(-4,418)" fill-opacity="1" fill="black" text-rendering="geometricPrecision" image-rendering="optimizeQuality" font-family="sans-serif" stroke-linejoin="round" stroke="black" stroke-opacity="1"
     ><line y2="50" fill="none" x1="50" clip-path="url(#clipPath17)" x2="50" y1="107"
