@@ -1,0 +1,13 @@
+@startuml componentDiagram_level1
+left to right direction
+
+component "<<component>>\n<<Context(C4)>>\nBiblioteca" as c2 {
+  port 1
+}
+
+interface UtilizadorUI as ui
+
+
+ui -- 1
+
+@enduml

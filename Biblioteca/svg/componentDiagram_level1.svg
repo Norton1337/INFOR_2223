@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentStyleType="text/css" height="401px" preserveAspectRatio="none" style="width:783px;height:401px;background:#FFFFFF;" version="1.1" viewBox="0 0 783 401" width="783px" zoomAndPan="magnify"><defs/><g><!--MD5=[fe74bc4188e7260991e39f9e257107f8]
+cluster  <<component>>\n<<System(C4)\nBiblioteca--><g id="cluster_ &lt;&lt;component&gt;&gt;\n&lt;&lt;System(C4)\nBiblioteca"><rect fill="none" height="285" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:1.0;" width="547" x="230" y="110"/><rect fill="none" height="10" style="stroke:#181818;stroke-width:1.0;" width="15" x="757" y="115"/><rect fill="none" height="2" style="stroke:#181818;stroke-width:1.0;" width="4" x="755" y="117"/><rect fill="none" height="2" style="stroke:#181818;stroke-width:1.0;" width="4" x="755" y="121"/><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="111" x="450" y="137.5332">&lt;&lt;component&gt;&gt;</text><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="94" x="456.5" y="155.1426">&lt;&lt;System(C4)</text><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="70" x="468.5" y="172.752">Biblioteca</text></g><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="8" x="499" y="88.9238">1</text><rect fill="#F1F1F1" height="12" style="stroke:#181818;stroke-width:1.5;" width="12" x="497" y="104"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="8" x="226" y="369.5332">2</text><rect fill="#F1F1F1" height="12" style="stroke:#181818;stroke-width:1.5;" width="12" x="224" y="343"/><!--MD5=[c42ed81cef7fdd2e33758127945b9a5b]
+entity UI--><g id="elem_UI"><rect fill="#F1F1F1" height="82.8281" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="146" x="615" y="176"/><rect fill="#F1F1F1" height="10" style="stroke:#181818;stroke-width:0.5;" width="15" x="741" y="181"/><rect fill="#F1F1F1" height="2" style="stroke:#181818;stroke-width:0.5;" width="4" x="739" y="183"/><rect fill="#F1F1F1" height="2" style="stroke:#181818;stroke-width:0.5;" width="4" x="739" y="187"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="86" x="630" y="210.5332">«component»</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="106" x="630" y="228.1426">&lt;&lt;Container(C4)</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="27" x="630" y="245.752">SPA</text></g><!--MD5=[3a8fb244abd3d3c79eafcdc38e4b6a18]
+entity backendAPI--><g id="elem_backendAPI"><ellipse cx="593" cy="349" fill="#F1F1F1" rx="8" ry="8" style="stroke:#181818;stroke-width:0.5;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="76" x="555" y="380.5332">BackendAPI</text></g><!--MD5=[4e8ecd94af36cce41665c9f079adf9fd]
+entity backend--><g id="elem_backend"><rect fill="#F1F1F1" height="82.8281" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="161" x="418.5" y="176"/><rect fill="#F1F1F1" height="10" style="stroke:#181818;stroke-width:0.5;" width="15" x="559.5" y="181"/><rect fill="#F1F1F1" height="2" style="stroke:#181818;stroke-width:0.5;" width="4" x="557.5" y="183"/><rect fill="#F1F1F1" height="2" style="stroke:#181818;stroke-width:0.5;" width="4" x="557.5" y="187"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="102" x="433.5" y="210.5332">&lt;&lt;«component»</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="106" x="433.5" y="228.1426">&lt;&lt;Container(C4)</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="121" x="433.5" y="245.752">Biblioteca BackEnd</text></g><!--MD5=[c97c613dbfcfa94bb180f2ce6d0b4cfd]
+entity BD--><g id="elem_BD"><path d="M6,204 C6,194 107,194 107,194 C107,194 208,194 208,204 L208,230.6094 C208,240.6094 107,240.6094 107,240.6094 C107,240.6094 6,240.6094 6,230.6094 L6,204 " fill="#F1F1F1" style="stroke:#181818;stroke-width:0.5;"/><path d="M6,204 C6,214 107,214 107,214 C107,214 208,214 208,204 " fill="none" style="stroke:#181818;stroke-width:0.5;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="182" x="16" y="232.5332">Base de Dados da Biblioteca</text></g><!--MD5=[bf1b4add2ee2e1b53e65912b20fb7ef4]
+entity ui--><g id="elem_ui"><ellipse cx="503" cy="14" fill="#F1F1F1" rx="8" ry="8" style="stroke:#181818;stroke-width:0.5;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="69" x="468.5" y="45.5332">UtilizadorUI</text></g><!--MD5=[889ec79890063b8880b6b656b4f052a8]
+link ui to 1--><g id="link_ui_1"><path d="M503,23.01 C503,41.84 503,88.45 503,103.92 " fill="none" id="ui-1" style="stroke:#181818;stroke-width:1.0;"/></g><!--MD5=[2eebd5f7c68ae964e3623d6826efb300]
+link UI to 1--><g id="link_UI_1"><path d="M616.78,175.89 C574.53,151.79 526.02,124.13 509.16,114.51 " fill="none" id="UI-1" style="stroke:#181818;stroke-width:1.0;"/></g><!--MD5=[a770b5f14b08937f252337262b0ac7c4]
+link UI to backendAPI--><g id="link_UI_backendAPI"><path d="M658.2,259.12 C637.09,287.9 610.53,324.1 598.91,339.95 " fill="none" id="UI-backendAPI" style="stroke:#181818;stroke-width:1.0;"/></g><!--MD5=[428797f6059e73aa0645397600ad34c7]
+link backend to backendAPI--><g id="link_backend_backendAPI"><path d="M528.48,259.12 C549.37,287.9 575.65,324.1 587.16,339.95 " fill="none" id="backend-backendAPI" style="stroke:#181818;stroke-width:1.0;"/></g><!--MD5=[7ca710c0d41870e2541f8c2cb236c2b2]
+link backend to 2--><g id="link_backend_2"><path d="M418.34,252.1 C412.48,254.46 406.65,256.78 401,259 C329.92,286.92 293.33,264.34 240,319 C233.6,325.56 231.29,336.39 230.46,342.8 " fill="none" id="backend-2" style="stroke:#181818;stroke-width:1.0;"/></g><!--MD5=[c44294a378cd1141f9c573435398d594]
+link BD to 2--><g id="link_BD_2"><path d="M128.42,241.06 C157.88,272.07 209.07,325.96 225.07,342.81 " fill="none" id="BD-2" style="stroke:#181818;stroke-width:1.0;"/></g><!--MD5=[338c9e80fda2dee994195c72fb369328]
+@startuml componentDiagram_level2
+
+top to bottom direction
+
+component  " <<component>>\n<<System(C4)\nBiblioteca" {
+    portin 1
+    portout 2
+    component "<<component>>\n<<Container(C4)\nSPA" as UI
+    interface BackendAPI as backendAPI
+    component "<<<<component>>\n<<Container(C4)\nBiblioteca BackEnd" as backend
+}
+
+interface UtilizadorUI as ui
+
+interface BackendAPI as backendAPI
+
+database "Base de Dados da Biblioteca" as BD {
+
+}
+
+ui - - 1
+UI - - 1
+UI - - backendAPI
+backend - - backendAPI
+backend - 2
+BD - - 2
+
+@enduml
+
+PlantUML version 1.2022.7(Mon Aug 22 18:01:30 WEST 2022)
+(GPL source distribution)
+Java Runtime: Java(TM) SE Runtime Environment
+JVM: Java HotSpot(TM) 64-Bit Server VM
+Default Encoding: Cp1252
+Language: pt
+Country: PT
+--></g></svg>

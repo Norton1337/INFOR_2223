@@ -1,0 +1,28 @@
+@startuml componentDiagram_level2
+
+top to bottom direction
+
+component  " <<component>>\n<<System(C4)\nBiblioteca" {
+    portin 1
+    portout 2
+    component "<<component>>\n<<Container(C4)\nSPA" as UI
+    interface BackendAPI as backendAPI
+    component "<<<<component>>\n<<Container(C4)\nBiblioteca BackEnd" as backend
+}
+
+interface UtilizadorUI as ui
+
+interface BackendAPI as backendAPI
+
+database "Base de Dados da Biblioteca" as BD {
+
+}
+
+ui -- 1
+UI -- 1
+UI -- backendAPI
+backend -- backendAPI
+backend - 2
+BD -- 2
+
+@enduml
