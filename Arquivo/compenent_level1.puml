@@ -1,0 +1,13 @@
+@startuml
+
+component  " <<component>>\n Arquivo Intermédiario" {
+    portin p1
+    
+}
+
+
+interface "Utilizador_UI" as API2
+
+API2 -- p1
+
+@enduml

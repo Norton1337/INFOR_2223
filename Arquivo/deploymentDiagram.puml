@@ -9,12 +9,12 @@ node "Servidor: ARQ_BE" as BE {
   component "               <<component>>\n Arquivo Intermédiario Backend" as Backend
 }
 
-database "Base de Dados do Arquivo Intermediário" as BD {
+database "Base de Dados do \nArquivo Intermediário" as BD {
 
 }
 
 
-FE--BE : http/s
+FE---BE : http/s
 BE--BD : TCP/IP
 
 @enduml

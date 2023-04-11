@@ -10,8 +10,7 @@ component  " <<component>>\n Arquivo Intermédiario" {
  
 }
 
-database "Base de Dados do Arquivo Intermediário" as BD {
-
+database "Base de Dados do\nArquivo Intermediário" as BD {
 }
 
 interface "API ARQHIST" as API2
@@ -20,8 +19,7 @@ UI -- p1
 UI -- API
 Backend --> API
 Backend -- p2
-p2- API2
+p2 -- API2
 p2- BD
-
 
 @enduml

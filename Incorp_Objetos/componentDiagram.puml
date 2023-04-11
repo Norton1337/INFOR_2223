@@ -1,27 +1,27 @@
 @startuml
 
 component  " <<component>>\n Incorporação Objetos" {
-    portin p1
-    portout p2
-    component "         <<component>>\nIncorp_ObjetosUI" as UI
-    component "               <<component>>\n Incorp_ObjetosBackend" as Backend
-    interface "API Inc_Obj" as API
+    portin p5
+    portout p6
+    component "         <<component>>\nIncorp_ObjetosUI" as UI2
+    component "               <<component>>\n Incorp_ObjetosBackend" as Backend2
+    interface "API Inc_Obj" as API3
     
  
 }
 
-database "Base de Dados de Objetos adquiridos" as BD {
+database "Base de Dados de\nObjetos adquiridos" as BD2 {
 
 }
 
-interface "API INCORPOBJ" as API2
+interface "API INCORPOBJ" as API4
 
-UI -- p1
-UI -- API
-Backend --> API
-Backend -- p2
-p2- API2
-p2- BD
+UI2 -- p5
+UI2 -- API3
+Backend2 --> API3
+Backend2 -- p6
+p6- API4
+p6-- BD2
 
 
 @enduml
