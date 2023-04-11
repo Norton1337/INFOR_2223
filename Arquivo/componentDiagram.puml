@@ -1,4 +1,4 @@
-@startuml
+@startuml Arquivo component diagram
 
 component  " <<component>>\n Arquivo Intermédiario" {
     portin p1
